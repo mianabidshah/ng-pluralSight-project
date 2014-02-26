@@ -1,0 +1,66 @@
+/* app css stylesheet */
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+.voteCounterContainer {
+
+    border-radius: 8%;
+    height: 85px;
+    background-color: #555;
+    float: left;
+    padding-top:4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+.voteCounter {
+
+    color: #c8c8c8;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.voteImg img{
+
+    border-radius: 20%;
+    border: solid thin #030303;
+    padding: 1px;
+    width: 25px;
+    height: 23px;
+    background-color: #777;
+}
+
+.voteImg img:hover{
+
+    cursor: pointer;
+    background-color: #cccccc;
+}
